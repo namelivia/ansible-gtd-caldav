@@ -23,6 +23,6 @@
       awslogs-group: "{{ cloudwatch_log_group }}"
       awslogs-stream: "{{ application_name }}"
     env:
-      CALDAV_URL: "{{ caldav_url}}"
+      CALDAV_URL: "{{ caldav_url }}"
       USER: "{{ user }}"
       PASSWORD: "{{ password }}"
