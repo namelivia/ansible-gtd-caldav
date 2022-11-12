@@ -7,7 +7,7 @@
       - cloudwatch_region is defined
       - cloudwatch_log_group is defined
       - caldav_url is defined
-      - user is defined
+      - username is defined
       - password is defined
 
 - name: Create app container
@@ -24,5 +24,5 @@
       awslogs-stream: "{{ application_name }}"
     env:
       CALDAV_URL: "{{ caldav_url }}"
-      USER: "{{ user }}"
+      USERNAME: "{{ username }}"
       PASSWORD: "{{ password }}"
