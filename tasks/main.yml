@@ -23,6 +23,8 @@
       awslogs-region: "{{ cloudwatch_region }}"
       awslogs-group: "{{ cloudwatch_log_group }}"
       awslogs-stream: "{{ application_name }}"
+    networks:
+      - name: "pomerium"
     env:
       CALDAV_URL: "{{ caldav_url }}"
       NOTIFICATIONS_SERVICE_ENDPOINT: "{{ notifications_service_endpoint }}"
